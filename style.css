@@ -120,20 +120,10 @@ header .navbar .bars {
 }
 @media (max-width: 768px) {
   #beautiful .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
   }
   #beautiful .box h1 {
     font-size: 50px;
-    text-align: center;
-  }
-  #beautiful .box h5 {
-    text-align: center;
-  }
-  #beautiful .box h4 {
-    text-align: center;
   }
   #beautiful .imgbox {
     margin-top: 20px;
@@ -141,20 +131,13 @@ header .navbar .bars {
 }
 @media (max-width: 576px) {
   #beautiful .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
   }
   #beautiful .box h1 {
     font-size: 40px;
-    text-align: center;
   }
   #beautiful .box h5 {
-    text-align: center;
-  }
-  #beautiful .box h4 {
-    text-align: center;
+    font-size: 18px;
   }
   #beautiful .imgbox {
     margin-top: 20px;
@@ -185,6 +168,20 @@ header .navbar .bars {
 }
 #thehome .imgbox {
   width: 520px;
+}
+@media (max-width: 768px) {
+  #thehome .textbox {
+    text-align: center;
+  }
+  #thehome .textbox h1 {
+    font-size: 50px;
+  }
+  #thehome .textbox h5 {
+    font-size: 18px;
+  }
+  #thehome .imgbox {
+    margin-top: 20px;
+  }
 }
 
 #works h1 {
