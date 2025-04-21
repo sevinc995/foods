@@ -119,6 +119,12 @@ header .navbar .bars {
   }
 }
 @media (max-width: 768px) {
+  #beautiful .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   #beautiful .box h1 {
     font-size: 50px;
     text-align: center;
