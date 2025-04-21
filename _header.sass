@@ -9,3 +9,51 @@ header
             margin-right: 30px
         .home-color
             color: #74bebc
+    .navbar
+        .icon
+            width: 50px
+            height: 50px
+            border-radius: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #37b6be
+            position: relative
+            font-size: 25px
+            color: #ffff
+            margin-right: 10px
+            .circle
+                position: absolute
+                top: -7px
+                left: 35px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 10px
+                width: 20px
+                height: 20px
+                border-radius: 50%
+                background-color: #ffff
+                color: #37b6be
+        .bars
+            width: 50px
+            height: 50px
+            background-color: #e6ebee
+            color:#ced1d6
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 5px
+
+
+    @media (max-width: 992px)
+        nav  
+            display: none
+        .navbar
+            .icon
+                display: none
+
+    @media (max-width: 768px)
+        nav
+            display: none
+        

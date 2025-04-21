@@ -28,6 +28,56 @@ header nav a {
 header nav .home-color {
   color: #74bebc;
 }
+header .navbar .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #37b6be;
+  position: relative;
+  font-size: 25px;
+  color: white;
+  margin-right: 10px;
+}
+header .navbar .icon .circle {
+  position: absolute;
+  top: -7px;
+  left: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  color: #37b6be;
+}
+header .navbar .bars {
+  width: 50px;
+  height: 50px;
+  background-color: #e6ebee;
+  color: #ced1d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+@media (max-width: 992px) {
+  header nav {
+    display: none;
+  }
+  header .navbar .icon {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
 
 #beautiful {
   background-color: #f4fafb;
@@ -127,8 +177,7 @@ header nav .home-color {
 }
 #browse .textbox h4 span {
   color: #3cc1d8;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 #browse .btn {
   font-size: 18px;
