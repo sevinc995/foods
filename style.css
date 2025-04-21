@@ -77,6 +77,9 @@ header .navbar .bars {
   header nav {
     display: none;
   }
+  header .navbar .icon {
+    display: flex;
+  }
 }
 
 #beautiful {
@@ -109,6 +112,47 @@ header .navbar .bars {
 }
 #beautiful .box h4 {
   font-size: 20px;
+}
+@media (max-width: 992px) {
+  #beautiful .box h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+  #beautiful .box h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  #beautiful .box h5 {
+    text-align: center;
+  }
+  #beautiful .box h4 {
+    text-align: center;
+  }
+  #beautiful .imgbox {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  #beautiful .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #beautiful .box h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  #beautiful .box h5 {
+    text-align: center;
+  }
+  #beautiful .box h4 {
+    text-align: center;
+  }
+  #beautiful .imgbox {
+    margin-top: 20px;
+  }
 }
 
 #thehome {
