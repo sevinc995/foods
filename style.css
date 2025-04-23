@@ -232,7 +232,6 @@ header .trolley .bars {
 }
 
 #browse .textbox {
-  width: 500px;
   text-align: center;
 }
 #browse .textbox h1 {
@@ -303,4 +302,13 @@ header .trolley .bars {
 #browse .big {
   padding: 17px 53px;
   margin-top: 50px;
+}
+@media (max-width: 992px) {
+  #browse h1 {
+    font-size: 55px;
+  }
+  #browse .box {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
