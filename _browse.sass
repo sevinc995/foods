@@ -14,15 +14,16 @@
             span
                 color: #3cc1d8
                 text-decoration-line: underline
-    .btn
-        font-size: 18px
-        border: 0.5px solid #bdbdbd
-        padding: 15px 46px
-        margin: 0 20px 
-        border-radius: 5px
-    .bgc
-        background-color: #3cc1d8   
-        color: #ffff
+    .btnbox
+        .btn
+            font-size: 18px
+            border: 0.5px solid #bdbdbd
+            padding: 15px 46px
+            margin: 0 20px
+            border-radius: 5px
+        .bgc
+            background-color: #3cc1d8
+            color: #ffff
     .box
         padding: 30px
         .imgbox
@@ -33,6 +34,8 @@
             width: auto
             margin-left: 20px
             .minibox
+                display: flex
+                justify-content: space-between
                 h2
                     font-size: 22px
                     font-weight: 700
@@ -47,6 +50,7 @@
             .add
                 display: flex
                 input
+                    margin-right: 5px
                     border: 1px solid #e1e1e1
                     background-color: #e9e9e9
                     width: 50px
@@ -55,26 +59,41 @@
                     color: #ffff
                     padding: 7px 20px
     .big
+        background-color: #3cc1d8
+        color: #ffff
         padding: 17px 53px
         margin-top: 50px
 
     @media (max-width: 992px)
-        h1 
+        h1
             font-size: 55px
+        .box
+            .imgbox
+                width: 200px
+
+    @media (max-width: 768px)
         .box
             display: flex
             flex-direction: column
+            .imgbox
+                width: 240px
+            .textbox
+                max-width: 240px
+                margin-left: -2px
+                .minibox
+                    margin-top: 15px
+                    h2 
+                        font-size: 20px
+                    h5
+                        font-size: 17px
+                p
+                    font-size: 18px
+        .btnbox
+            display: flex
+            flex-direction: column
+            justify-content: center
+            .btn
+                padding: 15px 86px
+                margin-bottom: 10px
 
-
-    // @media (max-width: 768px)
-    //     .box
-    //         display: flex
-    //         flex-direction: column
-
-    // @media (max-width: 586px)
-    //     .box
-    //         display: flex
-    //         flex-direction: column
-
-        
-        
+    
