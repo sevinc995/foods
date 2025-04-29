@@ -213,9 +213,20 @@ header .trolley .bars {
   color: #676f8b;
   line-height: 1.3;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  #works .box .imgbox {
+    width: 300px;
+  }
+}
+@media (max-width: 430px) {
   #works .box .imgbox {
     width: 250px;
+  }
+  #works .box .textbox h2 {
+    font-size: 22px;
+  }
+  #works .box .textbox h4 {
+    font-size: 20px;
   }
 }
 
@@ -309,7 +320,7 @@ header .trolley .bars {
 @media (max-width: 768px) {
   #browse .box {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   #browse .box .imgbox {
     width: 240px;
