@@ -64,12 +64,19 @@
         margin-top: 50px
 
     @media (max-width: 992px)
+        .btnbox
+            display: flex
+            flex-wrap: wrap
         h1
             font-size: 55px
         .box
+            display: flex
+            justify-content: center
             .textbox
                 h2 
                     font-size: 20px
+                h5
+                    margin-top: 10px
 
     @media (max-width: 768px)
         .btnbox
@@ -78,7 +85,7 @@
             flex-wrap: wrap
             .btn
                 margin: 10px 0
-                padding: 7px 25px
+                padding: 7px 75px
         .box
             display: flex
             flex-wrap: wrap
@@ -86,7 +93,6 @@
                 width: 240px
             .textbox
                 max-width: 240px
-                margin-left: -2px
                 .minibox
                     margin-top: 15px
                     flex-direction: column
@@ -96,6 +102,13 @@
                         font-size: 17px
                 p
                     font-size: 18px
+                
+    @media ( max-width: 430px )
+        .btnbox
+            flex-direction: column
+            .btn
+                padding: 7px 75px
+        
         
 
     

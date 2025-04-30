@@ -325,11 +325,22 @@ header .trolley .bars {
   margin-top: 50px;
 }
 @media (max-width: 992px) {
+  #browse .btnbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
   #browse h1 {
     font-size: 55px;
   }
+  #browse .box {
+    display: flex;
+    justify-content: center;
+  }
   #browse .box .textbox h2 {
     font-size: 20px;
+  }
+  #browse .box .textbox h5 {
+    margin-top: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -340,7 +351,7 @@ header .trolley .bars {
   }
   #browse .btnbox .btn {
     margin: 10px 0;
-    padding: 7px 25px;
+    padding: 7px 75px;
   }
   #browse .box {
     display: flex;
@@ -351,7 +362,6 @@ header .trolley .bars {
   }
   #browse .box .textbox {
     max-width: 240px;
-    margin-left: -2px;
   }
   #browse .box .textbox .minibox {
     margin-top: 15px;
@@ -365,6 +375,14 @@ header .trolley .bars {
   }
   #browse .box .textbox p {
     font-size: 18px;
+  }
+}
+@media (max-width: 430px) {
+  #browse .btnbox {
+    flex-direction: column;
+  }
+  #browse .btnbox .btn {
+    padding: 7px 75px;
   }
 }
 
