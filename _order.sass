@@ -20,13 +20,15 @@
 
     @media (max-width: 992px)
         .textbox
+            display: flex
+            flex-direction: column
+            align-items: center
             text-align: center
             h1
                 font-size: 55px
 
     @media (max-width: 768px)
         .textbox
-            text-align: center
             h1 
                 font-size: 50px
             h5
@@ -34,3 +36,11 @@
                 margin: 20px 0 
         .imgbox
             margin-bottom: 50px
+    
+    @media (max-width: 440px)
+        .textbox
+            h1 
+                font-size: 50px
+            h5
+                font-size: 17px
+                margin: 20px 0 
