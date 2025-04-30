@@ -118,10 +118,19 @@ header .trolley .bars {
 }
 @media (max-width: 992px) {
   #beautiful .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
   #beautiful .box h5 {
     margin: 20px 0 30px 0;
+  }
+  #beautiful .box .btn {
+    padding: 13px 25px;
+  }
+  #beautiful .box .imgbox {
+    width: 100px;
   }
   #beautiful .imgbox {
     margin-top: 50px;
@@ -131,11 +140,11 @@ header .trolley .bars {
   #beautiful .box h1 {
     font-size: 50px;
   }
-  #beautiful .box h5 {
-    margin: 20px 0 30px 0;
+  #beautiful .box .btn {
+    padding: 10px 23px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 430px) {
   #beautiful .box h1 {
     font-size: 40px;
   }
@@ -167,6 +176,9 @@ header .trolley .bars {
 }
 @media (max-width: 992px) {
   #thehome .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
   #thehome .textbox h1 {
@@ -176,12 +188,15 @@ header .trolley .bars {
     margin-top: 50px;
   }
 }
-@media (max-width: 586px) {
+@media (max-width: 430px) {
   #thehome .textbox h1 {
     font-size: 50px;
   }
   #thehome .textbox h5 {
     font-size: 18px;
+  }
+  #thehome .textbox .btn {
+    padding: 11px 23px;
   }
 }
 
@@ -198,7 +213,7 @@ header .trolley .bars {
   align-items: center;
 }
 #works .box .imgbox {
-  width: 350px;
+  width: 100%;
 }
 #works .box .textbox {
   padding: 35px 55px;
@@ -215,7 +230,7 @@ header .trolley .bars {
 }
 @media (max-width: 768px) {
   #works .box .imgbox {
-    width: 300px;
+    width: 280px;
   }
 }
 @media (max-width: 430px) {
@@ -226,7 +241,7 @@ header .trolley .bars {
     font-size: 22px;
   }
   #works .box .textbox h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -313,11 +328,20 @@ header .trolley .bars {
   #browse h1 {
     font-size: 55px;
   }
-  #browse .box .imgbox {
-    width: 200px;
+  #browse .box .textbox h2 {
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
+  #browse .btnbox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #browse .btnbox .btn {
+    margin: 10px 0;
+    padding: 7px 25px;
+  }
   #browse .box {
     display: flex;
     flex-wrap: wrap;
@@ -331,6 +355,7 @@ header .trolley .bars {
   }
   #browse .box .textbox .minibox {
     margin-top: 15px;
+    flex-direction: column;
   }
   #browse .box .textbox .minibox h2 {
     font-size: 20px;
@@ -340,15 +365,6 @@ header .trolley .bars {
   }
   #browse .box .textbox p {
     font-size: 18px;
-  }
-  #browse .btnbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #browse .btnbox .btn {
-    padding: 15px 86px;
-    margin-bottom: 10px;
   }
 }
 

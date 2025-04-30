@@ -67,10 +67,18 @@
         h1
             font-size: 55px
         .box
-            .imgbox
-                width: 200px
+            .textbox
+                h2 
+                    font-size: 20px
 
     @media (max-width: 768px)
+        .btnbox
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            .btn
+                margin: 10px 0
+                padding: 7px 25px
         .box
             display: flex
             flex-wrap: wrap
@@ -81,18 +89,13 @@
                 margin-left: -2px
                 .minibox
                     margin-top: 15px
+                    flex-direction: column
                     h2 
                         font-size: 20px
                     h5
                         font-size: 17px
                 p
                     font-size: 18px
-        .btnbox
-            display: flex
-            flex-direction: column
-            justify-content: center
-            .btn
-                padding: 15px 86px
-                margin-bottom: 10px
+        
 
     
